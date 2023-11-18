@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/70148d33a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </head>
+  <body>
+    <main>
+      <div class="heading">
+        <h1 class="header">Rock Paper Scissors</h1>
+        <p class="htp">Not sure how to play? Click below!</p>
+        <button class="btn htp-btn">Show me!</button>
+      </div>
+      <div class="round-card">
+        <h2>Round <span class="round">1</span> of 5</h2>
+      </div>
+      <div class="play-box">
+        
+        <!-- Human -->
+        <div class="human player">
+            <h2 class="name">Player</h2>
+          <div class="input-box">
+            <div class="rock-btn player-btn opt-btn">
+              <i class="fa-solid fa-hand-back-fist"></i>
+            </div>
+            <div class="paper-btn player-btn opt-btn">
+                <i class="fa-solid fa-hand"></i>
+            </div>
+            <div class="scissors-btn player-btn opt-btn lose">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </div>
+          </div>
+          <p class="score-text">wins: <span class="score"></span>0</p>
+        </div>
+        <!-- Computer -->
+        <div class="compy player">
+            <h2 class="name">Computer</h2>
+            <div class="input-box">
+              <div class="rock-btn opt-btn win">
+                <i class="fa-solid fa-hand-back-fist"></i>
+              </div>
+              <div class="paper-btn opt-btn">
+                  <i class="fa-solid fa-hand"></i>
+              </div>
+              <div class="scissors-btn opt-btn">
+                  <i class="fa-solid fa-hand-scissors"></i>
+              </div>
+            </div>
+            <p class="score-text">wins: <span class="score"></span>0</p>
+          </div>
+        </div>
+        <div class="hidden final-panel">
+            <h2 class="winner-text"><span class="winner"></span> is the winner!</h2>
+            <p class="again-text">Play again?</p>
+            <button class="reset-btn btn">Reset</button>
+        </div>
+    </main>
+  </body>
+</html>
