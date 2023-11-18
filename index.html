@@ -22,52 +22,47 @@
     <main>
       <div class="heading">
         <h1 class="header">Rock Paper Scissors</h1>
-        <p class="htp">Not sure how to play? Click below!</p>
-        <button class="btn htp-btn">Show me!</button>
-      </div>
-      <div class="round-card">
-        <h2>Round <span class="round">1</span> of 5</h2>
-      </div>
-      <div class="play-box">
+      <div id="play-box" class="play-box">
         
         <!-- Human -->
         <div class="human player">
             <h2 class="name">Player</h2>
           <div class="input-box">
-            <div class="rock-btn player-btn opt-btn">
+            <div id='player-rock-btn' class="player-btn opt-btn">
               <i class="fa-solid fa-hand-back-fist"></i>
             </div>
-            <div class="paper-btn player-btn opt-btn">
+            <div id="player-paper-btn" class="player-btn opt-btn">
                 <i class="fa-solid fa-hand"></i>
             </div>
-            <div class="scissors-btn player-btn opt-btn lose">
+            <div id="player-scissors-btn" class="player-btn opt-btn">
                 <i class="fa-solid fa-hand-scissors"></i>
             </div>
           </div>
-          <p class="score-text">wins: <span class="score"></span>0</p>
+          <p class="score-text">wins: <span class="player-score"></span></p>
         </div>
         <!-- Computer -->
         <div class="compy player">
             <h2 class="name">Computer</h2>
             <div class="input-box">
-              <div class="rock-btn opt-btn win">
+              <div id="comp-rock-btn" class="opt-btn">
                 <i class="fa-solid fa-hand-back-fist"></i>
               </div>
-              <div class="paper-btn opt-btn">
+              <div id="comp-paper-btn" class="opt-btn">
                   <i class="fa-solid fa-hand"></i>
               </div>
-              <div class="scissors-btn opt-btn">
+              <div id="comp-scissors-btn" class="opt-btn">
                   <i class="fa-solid fa-hand-scissors"></i>
               </div>
             </div>
-            <p class="score-text">wins: <span class="score"></span>0</p>
+            <p class="score-text">wins: <span id="compy-score" class="compy-score"></span></p>
           </div>
         </div>
-        <div class="hidden final-panel">
-            <h2 class="winner-text"><span class="winner"></span> is the winner!</h2>
+        <div id="final-panel" class="hidden final-panel">
+            <h2 class="winner-text"><span id="winner" class="winner"></span> is the winner!</h2>
             <p class="again-text">Play again?</p>
             <button class="reset-btn btn">Reset</button>
         </div>
     </main>
+    <script src="js/app.js"></script>
   </body>
 </html>

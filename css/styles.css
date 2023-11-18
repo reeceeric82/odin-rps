@@ -100,3 +100,11 @@ html {
 .hidden {
     display: none;
 }
+
+.winner-text {
+    padding-bottom: 25px;
+}
+
+.again-text {
+    padding-bottom: 25px;
+}
